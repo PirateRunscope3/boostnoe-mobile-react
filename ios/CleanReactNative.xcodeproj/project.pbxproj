@@ -688,10 +688,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 9KBH5RKYEW;
+						DevelopmentTeam = 5Z97G9NZQ6;
 						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -1170,6 +1171,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1182,6 +1186,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanReactNative.app/CleanReactNative";
 			};
 			name = Debug;
@@ -1190,7 +1195,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CleanReactNativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1199,6 +1207,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanReactNative.app/CleanReactNative";
 			};
 			name = Release;
@@ -1211,7 +1220,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 9KBH5RKYEW;
+				DEVELOPMENT_TEAM = 5Z97G9NZQ6;
 				INFOPLIST_FILE = CleanReactNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1221,8 +1230,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "v-koand.com.openid.boostnote";
 				PRODUCT_NAME = CleanReactNative;
-				PROVISIONING_PROFILE = "c381f3d3-9dc4-450f-a775-c8da1e4809de";
-				PROVISIONING_PROFILE_SPECIFIER = "Microsoft Dogfood Provisioning Profile";
+				PROVISIONING_PROFILE = "e3d86a56-98f6-4945-a791-0b894626ef95";
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Wildcard In-House";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1234,7 +1243,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9KBH5RKYEW;
+				DEVELOPMENT_TEAM = 5Z97G9NZQ6;
 				INFOPLIST_FILE = CleanReactNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1244,8 +1253,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "v-koand.com.openid.boostnote";
 				PRODUCT_NAME = CleanReactNative;
-				PROVISIONING_PROFILE = "c381f3d3-9dc4-450f-a775-c8da1e4809de";
-				PROVISIONING_PROFILE_SPECIFIER = "Microsoft Dogfood Provisioning Profile";
+				PROVISIONING_PROFILE = "e3d86a56-98f6-4945-a791-0b894626ef95";
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Wildcard In-House";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
